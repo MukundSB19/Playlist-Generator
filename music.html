@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Generator</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+        
+    <button id="dark-mode-toggle">Dark Mode: Off</button>
+    <div class="container">
+        <h1>Top 10 Songs from your Favourite Artist</h1>
+        <div class="form">
+            <label for="genre">Select Artist:</label>
+            <select id="genre">
+                <option value="Drake">Drake
+                </option>
+                <option value="EdSheeran">Ed Sheeran</option>
+                <option value="weeknd">Weeknd</option>
+                <option value="Justin">Justin Bieber</option>
+                <option value="Charlie">Charlie Puth</option>
+                <option value="shawn">Shawn Mendes</option>
+                <option value="Diljit">Diljit Dosanjh</option>
+                <option value="karan">Karan Aujla</option>
+                <option value="travis">Travis Scott</option>
+                <option value="dua">Dua Lipa</option>
+                <!-- Add more genres as needed -->
+            </select>
+            <button onclick="generatePlaylist()">Search</button>
+        </div>
+        <div id="playlist"></div>
+    </div>
+   
+    <script src="music.js"></script>
+   
+</body>
+</html>
